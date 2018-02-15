@@ -23,26 +23,9 @@ Drop = ~/Dropbox
 
 ######################################################################
 
-## Directories
-
-# clonedirs += clone
-clone:
-	git clone https://github.com/Bio3SS/$@.git
-
-# mdirs += test
-test:
-	git submodule add -b master https://github.com/Bio3SS/$@
-
-# pushdir = web/materials
-
-## repodirs have auto-making rules from modules.mk
-## mdirs are used by recursive git rules
-repodirs += $(specdirs)
-mdirs = $(specdirs)
-
-######################################################################
-
 ## Content
+
+Sources += chicago2.bst stat_signif.bib wlpeerj.cls
 
 Sources += main.tex doc.tex
 main.pdf: doc.tex main.tex
