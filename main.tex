@@ -1,0 +1,50 @@
+\documentclass[12pt, english]{wlpeerj} % Just a convenient template
+\usepackage{palatino}
+\usepackage{subfiles}
+\usepackage[english]{babel} 
+\usepackage[comma]{natbib}
+\bibliographystyle{chicago2}
+\usepackage{url}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage[colorlinks=true, citecolor = blue, linkcolor = black]{hyperref}
+\usepackage{environ}
+\usepackage{marginnote}
+\usepackage{lineno}
+\usepackage{setspace}
+\newcommand{\figref}[1]{Figure~\ref{fig:#1}}
+\reversemarginpar
+\singlespacing
+
+\newcommand{\jd}[1]{{\bf \color{blue} JD: #1}}
+\newcommand{\mk}[1]{{\bf \color{red} MK: #1}}
+\newcommand{\bmb}[1]{{\bf \color{green} BMB: #1}}
+
+\title{Is statistical significance a thing?}
+
+\author[1]{Jonathan Dushoff}
+\author[1]{Morgan P. Kain}
+\author[1,2]{Ben M. Bolker?}
+
+\affil[1]{Department of Biology, McMaster University, 1280 Main Street West, Hamilton, Ontario L8S 4K1 Canada}
+\affil[2]{Department of Mathematics and Statistics, McMaster University, 1280 Main Street West, Hamilton, Ontario 
+L8S 4L8 Canada}
+
+\corrauthor[1]{Jonathan Dushoff}{dushoff@mcmaster.ca}
+
+\begin{document}
+
+\input{doc.tex}
+
+\newpage
+\singlespacing
+
+\bibliography{stat_signif}
+
+\end{document}
