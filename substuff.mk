@@ -6,7 +6,7 @@ Sources += $(ms)
 
 Makefile: $(ms)
 $(ms):
-	git clone https://github.com/dushoff/$@.git
+	git submodule add -b master https://github.com/dushoff/$@.git
 
 $(ms)/%.mk: $(ms)/Makefile
 	touch $@

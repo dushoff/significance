@@ -11,12 +11,12 @@ target = Makefile
 
 # stuff
 
-Sources += Makefile .ignore README.md clonestuff.mk LICENSE.md
+Sources += Makefile .ignore README.md substuff.mk LICENSE.md
 
 ## Change Drop with untracked local.mk (called automatically from substuff.mk)
 Drop = ~/Dropbox
 
--include clonestuff.mk
+-include substuff.mk
 # -include $(ms)/perl.def
 # -include $(ms)/newtalk.def
 # -include $(ms)/repos.def
