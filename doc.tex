@@ -2,14 +2,14 @@
 
 \mk{Unedited placeholder text}
 
-\textbf{Abstract}: Decades of misuse and misinterpretation of Null Hypothesis Significance Testing (NHST) has led to recent 
-calls for abandoning its use. We argue that statistical hypothesis tests are useful, but are not, and should not be 
-referred to, as tests of significance. We propose that a sensible method to reduce misconceptions about p~values 
+\textbf{Abstract}: Decades of misuse and misinterpretation of Null Hypothesis Significance Testing (NHST) has resulted in
+calls to abandon its use. Alternatively, we argue that statistical hypothesis tests are useful, but are not, and should not
+be referred to, as tests of significance. We propose that a sensible method to reduce misconceptions about NHST and p~values 
 is to refer to the results of NHST (i.e. $p < or > 0.05$) using ``statistical clarity''. A test of the null hypothesis tells 
-us whether or not we can \emph{clearly} see our effect (e.g. whether a correlation is positive or negative, or if a response 
-in the treatment group is greater than the response in the control group). Specifically, we argue the use of ``statistical
-clarity'' will help researchers avoid accepting the null hypothesis and retrieve the English definition for ``significance'' 
-to shift focus back to substantive significance.
+us whether or not we can \emph{clearly} see our effect (e.g. whether we can clearly see that a correlation is positive or 
+negative, or if a response in the treatment group is greater than the response in the control group). Specifically, we argue 
+that the use of ``statistical clarity'' will help researchers avoid accepting the null hypothesis and reclaim the English 
+definition for ``significance'', allowing for a shift in focus to substantive significance.
 
 \textbf{Structure:} I like the idea of two parallel boxes that have examples of language used in published papers on the
 left and corrected language on the right. Maybe three examples that correspond to four primary misinterpretations people
@@ -50,52 +50,84 @@ Research}, \citet{Bernardietal.2017} found that 72\% of studies contained an amb
 way. The misuse and misinterpretation of NHST is so pervasive that there has been a recent push for drastically reducing its 
 use \citep{SzucsandIoannidis2017} or abandoning its use altogether \citep{McShaneetal.2017}. Others have called for a more
 strenuous significance threshold (e.g. $p < 0.005$: \citealt{Benjaminetal.2018}); however, this change is unlikely to reduce
-the misuse and misinterpretation of p~values, or the publication bias imposed by any p~value threshold 
-\citep{Ridleyetal.2007}
+the misuse and misinterpretation of p~values, or the publication bias imposed by any p~value threshold \citep{Ridleyetal.2007}.
 
-Alternatively, we suggest a change in the language used in NHST. Results from NHST (i.e. $p < or > 0.05$) should be 
-described using language that directly corresponds to what a test of the null hypothesis actually tells us: whether or not 
-we can \emph{clearly} see our effect. For example, given $H_{0} = 0$ (e.g. the difference in our treatments is 0) what a 
-$p < 0.05$ tells us is whether or not we can clearly see the sign of the effect. Using the language of ``statistical 
-clarity'' would help researchers escape the trap of accepting the null hypothesis and reduce multiple types of
-misinterpretation associated with accepting the null hypothesis, while allowing for it to be retained as a method of 
-inference (e.g. see \citealt{Abelson1997} for arguments for NHST). For example,equating $p < 0.05$ with a zero effect would 
-be much harder to make once a researcher has written the following sentence: ``The difference between our control and 
-treatment group was not statistically clear ($p = 0.24$). Additionally, the use of $p > 0.05$ as evidence for something 
-(accepting the null hypothesis) would be more difficult if the following language was used: ``We were unable to clearly 
-determine how our control and sham treatments differed''. Additionally, once ``significant'' regained its common English 
-definition, conflating $p < 0.05$ with substantive significance would be more difficult.
-
-\begin{itemize}
-  \item Other topics to mention
-  	\subitem difficulty in interpreting confidence intervals?
-    \subitem usefulness of p --- use in splines: non-ridiculous standard to determine if we can see a pattern
-    \subitem a p~value is not a property of reality (a biological ``thing''), but a property of a data set and assumptions...
-\end{itemize}
-
-\begin{itemize}
-  \item To do
-  	\subitem unsort bib for convenient lookup of types of cites
-    \subitem links in bib to pdfs
-\end{itemize}
+Instead, we suggest that using the language of ``statistical clarity'' would help researchers escape the trap of accepting 
+the null hypothesis, reduce multiple types of misinterpretation associated with accepting the null hypothesis, and allow for
+the continued use of NHST as a method of inference (e.g. see \citealt{Abelson1997} for arguments for NHST). What a test of the
+null hypothesis actually tells us is whether or not we can \emph{clearly} see our effect. For example, given $H_{0} = 0$ (e.g.
+the difference in our treatments is 0) what a $p < 0.05$ tells us is whether or not we can clearly see the sign of the effect. 
+Therefore, results from NHST (i.e. $p < or > 0.05$) should be described using ``statistical clarity'' instead of ``statistical 
+significance''. For example, equating $p < 0.05$ with a zero effect would be much harder to make once a researcher has written 
+the following sentence: ``The difference between our control and treatment group was not statistically clear ($p = 0.24$). 
+Additionally, the use of larger p~values as increased evidence for the null would be more difficult if the following language
+was used: ``We were unable to clearly determine how our control and sham treatments differed''. Finally, in almost all cases 
+what a researcher really cares about is the size of an effect and the scientific implications of the effect.  As 
+\citet{Bernardietal.2017} state, ``...sociological and social significance are sacrificed on the altar of statistical 
+significance''. If ``significant'' were to reclaim its common English definition, conflating $p < 0.05$ with substantive
+significance would occur less frequently.
 
 \section*{Statistical Clarity}
 
-\mk{Recount the way a high p is obtained?}
+\mk{Language here needs a lot of work. Both in terms of clarity (haha) (use of ``confidence'' may be a bit confusing) and 
+because I am not sure that everything I am saying here is 100\% correct. Also not sure if this is how this section should
+start. Finally, portions of this have already been said in the paragraphs above.}
 
-\subsection*{$\mathbf{p > 0.05 \neq}$ zero effect}
+A p~value is not a property of reality (e.g. a biological phenomena), but is a property of a data set and the statistical test
+used. A p~value must therefore be interpreted and reported as a measure that quantifies our confidence about what we can see
+clearly about reality given our data. A $p < 0.05$ tells us that we are confident in in our ability to clearly see the sign
+of our effect (at an $\alpha = 0.05$ cutoff). While a direct illustration of this clarity is shown with the confidence 
+interval associated with $p < 0.05$, which will not overlap 0 (\mk{In nearly all cases?}), a p~value is a useful tool to 
+quantify this clarity. A p~value does not tell us about the substantive (e.g. biological) importance of our finding. Because
+the p~value is a property of the data, and a true zero,``null effect'' does not exist in the vast majority of scientific 
+fields \citep{Meehl1990, Tukey1991, Cohen1994}, $p < 0.05$ can be obtained for a very small effect with a large enough 
+sample size. Yet, references to a ``null effect'' can still be found in high impact journals \citep[e.g.][]{Feldonetal.2017}. 
+To emphasize that effects are not truly zero, descriptions of statistical results using the language of clarity should begin 
+with reference to the effect. For example, ``The difference between the control and treatment group was not statistically 
+clear.'' In Table~1 we provide examples from the literature of language that misinterprets p~values and a sensible way of
+rewriting these statements to reduce confusion.
 
-In the vast majority of scientific fields a truly zero, ``null effect'' does not exist \citep{Meehl1990, Tukey1991,
-Cohen1994}. Yet, references to a null effect can still be found in high impact journals \citep[e.g.][]{Feldonetal.2017}. 
-To emphasize that effects are not truly zero, descriptions of statistical results using the language of clarity should
-begin with reference to the effect. For example, ``The difference between the control and treatment group was not 
-statistically clear.'' 
+Another common mistake is using a larger p~value as stronger evidence for accepting the null hypothesis. A larger p value 
+actually corresponds to less clarity and thus the possibility of an undetected larger effect (see Table~1 for an example). In 
+2006 Gelman and Stern wrote that the difference between statistically significant and statistically non-significant is not 
+itself significant. Rewritten using ``clarity'' this statement indicates that if a single result is not statistically 
+clear, any comparison made between that unclear result and a clear result will not itself be a clear comparison. An example
+taken from the literature is in Table~1. 
 
-\begin{itemize}
-  \item Equating $p > 0.05$ with no difference: \citep{Ortegoetal.2007, Singhetal.2017}
-\end{itemize}
+\mk{My table formatting skills are pretty bad}
 
-\mk{Probably do not need this full description here}
+\begin{framed}
+\begin{tabular}{p{7.5cm}p{7.5cm}}
+     Language in published journal articles & Rewritten using the language of ``clarity'' \\
+     	\hline
+        \\
+     \multicolumn{2}{c}{$\mathbf{p > 0.05 \neq}$ \textbf{zero effect}} \\
+     	No relationship between individual genetic diversity and prevalence of avian malaria... & 
+        The relationship between individual genetic diversity and prevalence of avian malaria was not
+        statistically clear \\
+        \\
+     \multicolumn{2}{c}{\textbf{Using larger p~values as more evidence for something}} \\
+        ...yielded nonsignificant differences on measures of those skills with P values of 
+        at least 0.2, and most in the $0.7 \leq P \leq 0.9$ range. & 
+        ...the differences between skills developed in treatment and control individuals
+        were bot statistically clear ($p > 0.05$) \\
+        \\
+     \multicolumn{2}{c}{\textbf{The difference between ``clear'' and ``not clear'' is ``not clear''}} \\
+        Substrate choice correlated significantly with food choice in males $(r_{s} = 0.32, N = 44, P < 0.05)$ 
+        but not in females $(r_{s} = 0.32, N = 24, NS)$. ... The authors discuss the biological reasons why
+        there is a relationship between these variables in males, but not in females & 
+        Substrate choice was positively correlated with food choice in males $(r_{s} = 0.32, N = 44, P < 0.05)$,
+        but this relationship was not statistically clear in females $(r_{s} = 0.32, N = 24, NS)$. A biological
+        description comparing the correlation in males vs females is inappropriate without a direct test (in
+        this case with the exact same correlation estimate, this is not a sensible test). \\
+\end{tabular}
+\end{framed}
+   \captionof{table}{Rewriting misinformed language in the published literature using our proposed updated language.}
+
+
+\section*{Closing Comments}
+
+\subsection*{Non-inferiority tests}
 
 Following a shift in language, we suggest using a non-inferiority test to test for a small effect. Consider the following 
 example. A hospital is considering switching from bulky, expensive surgical face masks to lighter weight, cheaper masks. A
@@ -107,26 +139,7 @@ transition. We note that this statistical test should be set up as a one-tailed 
 assumption is that the bulky, expensive masks are more effective. In this case, a $p < 0.05$ tells the hospital that the 
 difference between the new masks and old masks is small and that it they can proceed with the switch.
 
-\begin{itemize}
-  \item ``...establish the \emph{a priori} selection of an effect level that is considered unacceptably toxic:''
-  \citep{Dentonetal.2011}
-\end{itemize}
-
-\subsection*{Using larger p~values as more evidence for something}
-
-Another common mistake is using a larger p~value as stronger evidence for accepting the null hypothesis.  For example, 
-\mk{Need a good quote here. An ok placeholder:} ``...yielded nonsignificant differences on measures of those skills with P 
-values of at least 0.2, and most in the $0.7 \leq P \leq 0.9$ range.'' \citep{Feldonetal.2017}. A larger p value actually
-corresponds to less clarity and thus the possibility of an undetected larger effect. 
-
-\mk{Point about focal vs non-focal hypotheses. Often accept the null for non-focal (diagnostics). While this is not
-appropriate language it seems less bad...}
-
-\begin{itemize}
-  \item Setting out to accept the null: \citep{Karulinetal.2015}
-\end{itemize}  
-
-\mk{Again, maybe this is too much}
+\subsection*{Focal vs non-focal hypotheses}
 
 Accepting the null is especially common in diagnostic tests. For example, a Shapiro-Wilk test of normality that
 returns $p > 0.05$ means that it is statistically unclear how the data departs from normality (the data is collected
@@ -134,40 +147,7 @@ from a complicated world and does depart from normality). Without the goal of pi
 ``...allowing us to accept the null hypothesis about the normal spot count distribution.'' \citep{Karulinetal.2015} 
 is common language that should be avoided.
 
-\subsection*{The difference between clear and not clear is not clear}
-
-In 2006 Gelman and Stern wrote that the difference between statistically significant and statistically non-significant is
-not itself significant. Rewritten using ``clarity'' this statement indicates that if a single result is not statistically 
-clear, any comparison made between that unclear result and a clear result will not itself be a clear comparison. An example
-taken from the literature is the following: 
-
-For example, if a treatment induces a statistically clear increase in growth rate in males, but has an unclear effect in 
-females, the relationship between the treatment on males and females is not clear. 
-
-\begin{itemize}
-  \item With the \emph{correlation coefficient} for males and females (but significance for only one sex---``substrate 
-  choice correlated significantly with food choice in males'') the authors go on to describe biologically why the 
-  correlation would be significant for males but not females. \citep{MerilaitaandJormalainen1997}
-\end{itemize}  
-
-\subsection*{Conflating statistical and substantive significance}
-
-In almost all cases what a researcher really cares about is the size of an effect and the scientific implications of the
-effect. Statistical significance does not, in and of itself, tell us anything about substantive significance. As 
-\citet{Bernardietal.2017} state, ``...sociological and social significance are sacrificed on the altar of statistical 
-significance''. Included in this is an absence of reported effect sizes and confidence intervals.
-
-\begin{itemize}
-  \item Lack of clarity differentiating between biological and statistical significance: {Simonetal.2017}
-  \item Complete lack of effect sizes: \citep{Juriadoetal.2017}
-\end{itemize}
-
-\section*{Closing Comments}
-
-\begin{itemize}
-  \item Topics we may want to bring up
-	  \subitem Including a p~value helps to avoid type-S errors
-\end{itemize}
+\subsection*{Previous suggestions}
 
 Following the lead of \citet{Cohen1994} and others \citep{Goodman1999, ZiliakandMcCloskey2008, WassersteinandLazar2016},
 we conclude with a plea for an increased emphasis on effect sizes and confidence intervals. However, we suggest that the
@@ -175,8 +155,6 @@ use of ``statistical clarity'' forces the \emph{need} for confidence intervals a
 from statements associated with $p < 0.05$. The statement ``The difference between our control and treatment groups were
 statistically clear ($p = 0.007$)'' in unambiguously incomplete and uncompelling; an effect size and confidence interval 
 is required to complete the story.
-
-\mk{Not sure if we want any of this and how much we want to expand on any of these topics:}
 
 We echo previous statements in favor of ``neglected factors'' (prior and related evidence, plausibility of mechanism, 
 study design and data quality, real world benefits, novelty and other factors) \citep{McShaneetal.2017} and 
@@ -186,7 +164,34 @@ Additionally, we are in favor of writing a statistical journal that chronicles a
 \citep{Kassetal.2016}, and clearly defining the boundary between results presented as inferences based on \emph{a priori}
 hypotheses and those from \emph{post hoc} data exploration. 
 
+\section*{Lists}
+
+\begin{itemize}
+  \item Topics we may want to bring up
+	  \subitem Including a p~value helps to avoid type-S errors
+      \subitem usefulness of p --- use in splines: non-ridiculous standard to determine if we can see a pattern
+      \subitem difficulty in interpreting confidence intervals?
+\end{itemize}
+
+\begin{itemize}
+  \item Examples
+  \subitem Equating $p > 0.05$ with no difference: \citep{Ortegoetal.2007, Singhetal.2017}
+  \subitem Lack of clarity differentiating between biological and statistical significance: {Simonetal.2017}
+  \subitem Complete lack of effect sizes: \citep{Juriadoetal.2017}
+  \subitem Setting out to accept the null: \citep{Karulinetal.2015}
+  \subitem ``...establish the \emph{a priori} selection of an effect level that is considered unacceptably toxic:'' \citep{Dentonetal.2011}
+  \subitem With the \emph{correlation coefficient} for males and females (but significance for only one sex---``substrate 
+  choice correlated significantly with food choice in males'') the authors go on to describe biologically why the 
+  correlation would be significant for males but not females. \citep{MerilaitaandJormalainen1997}
+\end{itemize}
+
+\begin{itemize}
+  \item To do
+  	\subitem unsort bib for convenient lookup of types of cites
+    \subitem links in bib to pdfs
+\end{itemize}
+
 \subsection*{Acknowledgements}
 
-We (probably will) thank the Bolker lab for helpful comments on the first draft of the manuscript. 
+We thank members of the Dushoff and Bolker labs for helpful comments on the first draft of the manuscript.  
 
