@@ -30,9 +30,12 @@ Sources += chicago2.bst stat_signif.bib wlpeerj.cls
 Sources += main.tex doc.tex
 main.pdf: doc.tex main.tex
 
+Sources += oikos.txt
+
 ## What should we call the paper?
 Sources += names.txt
 ## https://tinyurl.com/oikos-clarity
+##  http://www.oikosjournal.org/authors/author-guidelines
 
 ######################################################################
 
