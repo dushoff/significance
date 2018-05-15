@@ -13,7 +13,7 @@
 \usepackage{tabularx}
 \usepackage{pdflscape}
 \usepackage{afterpage}
-\usepackage[colorlinks=true, citecolor = blue, linkcolor = black]{hyperref}
+\usepackage[colorlinks=true, citecolor = purple, linkcolor = purple]{hyperref}
 \usepackage{environ}
 \usepackage{marginnote}
 \usepackage{lineno}
@@ -23,11 +23,16 @@
 \reversemarginpar
 \singlespacing
 
-\newcommand{\jd}[1]{{\bf \color{blue} JD: #1}}
-\newcommand{\mk}[1]{{\bf \color{red} MK: #1}}
-\newcommand{\bmb}[1]{{\bf \color{green} BMB: #1}}
+%% This whole effort was a disaster!
+%% \usepackage[left=2.0in]{geometry} % For reasonable spacing with todonotes
+% \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+% \newcommand{\note}[2]{{\todo[linecolor=#1,backgroundcolor=#1!25,bordercolor=#1]{#2}{}}}
 
-%% \title{Is statistical significance a thing?}
+\newcommand{\note}[2]{{\bf \color{#1} #2}}
+\newcommand{\jd}[1]{\note{blue}{JD: #1}}
+\newcommand{\mk}[1]{\note{red}{MK: #1}}
+\newcommand{\bmb}[1]{\note{green}{BMB: #1}}
+
 \title{I can see clearly now: reinterpreting statistical significance
 }
 

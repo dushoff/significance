@@ -1,19 +1,19 @@
 \begin{abstract}
 
-\textbf{Abstract}: Null hypothesis significance testing (NHST) remains popular despite decades of concern about misuse and misinterpretation.
-Here we argue that a significant part of the problem is due simply to language: significance testing has little to do with other meanings of the word commonly uis not about  whatever the use of have led to debates over whether to abandon its use. 
-What to say about when and how they are useful? 
-Conflation?
-Get to the point!
-Part of the problem here is the use of the word ``significance''. 
-While hypothesis testing may be Here, we argue that statistical hypothesis tests are useful, but are not, and should not
-be referred to, as tests of significance. We propose a simple method to reduce misconceptions about NHST and p~values: 
-refer to the results of NHST (e.g. $p <$ or $> 0.05$) using ``statistical clarity'' rather than ``statistical significance''. 
-A test of the null hypothesis tells 
-us whether or not we can \emph{clearly} see our effect (e.g. whether we can clearly see that a correlation is positive or 
-negative, or if a response in the treatment group is greater than the response in the control group). Specifically, we argue 
-that the use of ``statistical clarity'' will help researchers avoid accepting the null hypothesis and reclaim the English 
-definition for ``significance'', allowing for a shift in focus to substantive significance.
+\textbf{Abstract}: Null hypothesis significance testing remains popular despite decades of concern about misuse and misinterpretation.
+We believe that a significant part of the problem is due simply to language: significance testing has little to do with other meanings of the word ``significance''. commonly uis not about  whatever the use of have led to debates over whether to abandon its use. 
+Although null-hypothesis tests have limitations, we argue here that they remain useful in many contexts as a guide to whether a certain effect can be seen \emph{clearly} in that context (e.g. whether we can clearly see that a correlation or between-group difference is positive or negative).
+We therefore suggest that p-values resulting from null-hypothesis tests be described using the language of ``statistical clarity'' rather than ``statistical significance''.
+We believe that this simple linguistic change has the potential to substantially enhance clarity in statistical communication.
+
+\end{abstract}
+
+\flushbottom
+\maketitle
+\newpage
+\thispagestyle{empty}
+
+\section*{Notes}
 
 \textbf{Structure:} I like the idea of two parallel boxes that have examples of language used in published papers on the
 left and corrected language on the right. Maybe three examples that correspond to four primary misinterpretations people
@@ -28,6 +28,8 @@ remains high. \citep{Bernardietal.2017} present an analysis of the presence of e
 results and ambiguity in language focused on NHST. Out of  They point out that these results are similar to the
 results from a similar review in the field of economics \citep{ZiliakandMcCloskey2008}.
 
+\textbf{Signs}. Who has said before that we test zero \emph{because} we want to know if we can see a sign clearly? If nobody, how much time do we want to spend on that point?
+
 \textbf{Notes:} A lot of this language assumes $H_{0} = 0$. Probably need to address clearly that many of these cited
 papers are based in psychology. I imagine we will want to anonymize quotes? (Though I kind of want to call out the null
 result short courses paper --- maybe as a point about non-significance and calling for reform)
@@ -36,22 +38,17 @@ result short courses paper --- maybe as a point about non-significance and calli
 Note in The American Naturalist: max 3000 words? Perspectives article in Nature?
 Oikos forum? \url{http://www.oikosjournal.org/authors/author-guidelines}: ``Proposals should be no more than half a page in length and should include statements about the novelty and need for the piece as well as suggestions with regard to which members of the editorial board would be most suited to evaluating the proposal.''
 
-\end{abstract}
-
-\flushbottom
-\maketitle
-\newpage
-\thispagestyle{empty}
+\clearpage
 
 \section*{Introduction}
 
 For nearly a century statisticians and scientists have described the shortcomings of Null Hypothesis Significance Testing
 (NHST) \citep[see][]{Cohen1994}. Research articles and books written in the past two decades proposing a deemphasis of the 
 p~value in favor of effect sizes and confidence intervals have been cited thousands of times \citep{Cohen1994, Goodman1999, 
-Wilkinson1999, ZiliakandMcCloskey2008, WassersteinandLazar2016}. Yet, both a reliance on NHST and the misinterpretation of 
+Wilkinson1999, ZiliakandMcCloskey2008, WassersteinandLazar2016}. Yet, both reliance on NHST and the misinterpretation of 
 results obtained from NHST remain high. In a 2017 meta-analysis of 356 studies published in \emph{European Sociological 
 Research}, \citet{Bernardietal.2017} found that 72\% of studies contained an ambiguous use of the term ``significant'', 
-49\% interpreted non-significant effects as zero effects, and 44 \% failed to report an effect size in a comprehensible 
+49\% interpreted non-significant effects as zero effects, and 44\% failed to report an effect size in a comprehensible 
 way. The misuse and misinterpretation of NHST is so pervasive that there has been a recent push for drastically reducing its 
 use \citep{SzucsandIoannidis2017} or abandoning its use altogether \citep{McShaneetal.2017}. Others have called for a more
 strenuous significance threshold (e.g. $p < 0.005$: \citealt{Benjaminetal.2018}); however, this change is unlikely to reduce
@@ -59,9 +56,13 @@ the misuse and misinterpretation of p~values, or the publication bias imposed by
 
 Instead, we suggest that using the language of ``statistical clarity'' would help researchers escape the trap of accepting 
 the null hypothesis, reduce multiple types of misinterpretation associated with accepting the null hypothesis, and allow for
-the continued use of NHST as a method of inference (e.g. see \citealt{Abelson1997} for arguments for NHST). What a test of the
+the continued use of NHST as a method of inference (e.g. see \citealt{Abelson1997} for arguments for NHST).
+
+As an example, consider \jd{Should I write a paragraph about signs and clarity?}
+The argument for clarity is clearest in the case of What a test of the
 null hypothesis actually tells us is whether or not we can \emph{clearly} see our effect. For example, given $H_{0} = 0$ (e.g.
 the difference in our treatments is 0) what a $p < 0.05$ tells us is whether or not we can clearly see the sign of the effect. 
+
 Therefore, results from NHST (i.e. $p < or > 0.05$) should be described using ``statistical clarity'' instead of ``statistical 
 significance''. For example, equating $p < 0.05$ with a zero effect would be much harder to make once a researcher has written 
 the following sentence: ``The difference between our control and treatment group was not statistically clear ($p = 0.24$). 
