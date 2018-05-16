@@ -30,6 +30,14 @@ Sources += chicago2.bst stat_signif.bib wlpeerj.cls
 Sources += main.tex doc.tex
 main.pdf: doc.tex main.tex
 
+Sources += refs.txt
+
+Ignore += Drop
+Drop:
+	(ls ~/Dropbox/clarity && ln -fs ~/Dropbox/clarity $@) \
+	|| (ls ~/Dropbox/research/clarity && ln -fs ~/Dropbox/research/clarity $@) \
+	|| (ls ~/Dropbox/dushoff/clarity && ln -fs ~/Dropbox/dushoff/clarity $@)
+
 ######################################################################
 
 -include $(ms)/visual.mk
