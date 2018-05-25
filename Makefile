@@ -9,29 +9,52 @@ target = Makefile
 
 ###################################################################
 
-# stuff
+Sources += Makefile .ignore 
+Ignore += .gitignore
 
-Sources += Makefile .ignore README.md substuff.mk LICENSE.md
+######################################################################
 
-## Change Drop with untracked local.mk (called automatically from substuff.mk)
+## Default locations; use local.mk to change
+msrepo = https://github.com/dushoff
+ms = makestuff
+
 Drop = ~/Dropbox
 
--include substuff.mk
+Ignore += local.mk
+-include local.mk
+-include $(ms)/os.mk
+
+######################################################################
+
+Ignore += $(ms)
+## Sources += $(ms)
+Makefile: $(ms) $(ms)/Makefile
+$(ms):
+	git submodule -b master $(msrepo)/$(ms)
+
+$(ms)/%.mk: $(ms)/Makefile ;
+$(ms)/Makefile:
+	git submodule update -i
+
 # -include $(ms)/perl.def
-# -include $(ms)/newtalk.def
-# -include $(ms)/repos.def
 
 ######################################################################
 
 ## Content
 
-Sources += chicago2.bst stat_signif.bib wlpeerj.cls
+Sources += chicago2.bst wlpeerj.cls
 
+## Manuscript
 Sources += main.tex doc.tex
 main.pdf: doc.tex main.tex
 
+## Notes about references
 Sources += refs.txt
 
+## Manual bib file
+Sources += stat_signif.bib 
+
+## Folder for stuff to share
 Ignore += Drop
 Drop:
 	(ls ~/Dropbox/clarity && ln -fs ~/Dropbox/clarity $@) \
