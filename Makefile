@@ -54,6 +54,7 @@ Sources += refs.txt
 Sources += stat_signif.bib 
 
 ## Folder for stuff to share
+## LMK if you want access
 Ignore += Drop
 Drop:
 	(ls ~/Dropbox/clarity && ln -fs ~/Dropbox/clarity $@) \
