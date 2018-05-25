@@ -26,8 +26,7 @@ Ignore += local.mk
 
 ######################################################################
 
-Ignore += $(ms)
-## Sources += $(ms)
+Sources += $(ms)
 Makefile: $(ms) $(ms)/Makefile
 $(ms):
 	git submodule -b master $(msrepo)/$(ms)
