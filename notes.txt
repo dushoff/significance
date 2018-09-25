@@ -1,7 +1,9 @@
 
+biorxiv 25 Oct!!
+
 2018 Sep 25 (Tue)
 =================
 
 * Bridge from possibly a quote that Morgan is tracing ("If NHST is as idiotic …" ) to Tukey ("three outcomes") to:
 	* people keep rediscovering this, maybe because language a usage keep confusing them
-	* https://www.econstor.eu/bitstream/10419/46356/1/640578543.pdf
+	* https://www.econstor.eu/bitstream/10419/46356/1/640578543.pdf (Kramer)
