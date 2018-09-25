@@ -1,3 +1,5 @@
 Jones and Tukey
 * https://journals.scholarsportal.info/details/1082989x/v05i0004/411_asfotst.xml
 * Drop/JonesTukeySig.pdf
+
+There is apparently a book called What if there were no significance tests?

@@ -53,7 +53,7 @@ Sources += refs.txt
 ## Manual bib file
 Sources += stat_signif.bib 
 
-## Folder for stuff to share
+## Folder for stuff to share (so far one paper!
 ## LMK if you want access
 Ignore += Drop
 Drop:
