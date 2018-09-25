@@ -2,4 +2,9 @@ Jones and Tukey
 * https://journals.scholarsportal.info/details/1082989x/v05i0004/411_asfotst.xml
 * Drop/JonesTukeySig.pdf
 
+
 There is apparently a book called What if there were no significance tests?
+
+The Cult of Statistical Significance Ziliak and McCloskey
+* Kramer review https://www.econstor.eu/bitstream/10419/46356/1/640578543.pdf
+	* Drop/What.pdf

@@ -47,8 +47,8 @@ Sources += chicago2.bst wlpeerj.cls
 Sources += main.tex doc.tex
 main.pdf: doc.tex main.tex
 
-## Notes about references
-Sources += refs.txt
+## Notes 
+Sources += refs.txt notes.txt
 
 ## Manual bib file
 Sources += stat_signif.bib 
