@@ -1,0 +1,28 @@
+
+\section*{Lists}
+
+\begin{itemize}
+  \item Topics we may want to bring up
+	  \subitem Including a p~value helps to avoid type-S errors
+      \subitem usefulness of p --- use in splines: non-ridiculous standard to determine if we can see a pattern
+      \subitem difficulty in interpreting confidence intervals?
+\end{itemize}
+
+\begin{itemize}
+  \item Examples
+  \subitem Equating $p > 0.05$ with no difference: \citep{Ortegoetal.2007, Bukovinszkyetal.2017, Singhetal.2017, Sundinetal.2017}
+  \subitem Lack of clarity differentiating between biological and statistical significance: {Simonetal.2017}
+  \subitem Complete lack of effect sizes: \citep{Juriadoetal.2017}
+  \subitem Setting out to accept the null: \citep{Karulinetal.2015}
+  \subitem ``...establish the \emph{a priori} selection of an effect level that is considered unacceptably toxic:'' \citep{Dentonetal.2011}
+  \subitem With the \emph{correlation coefficient} for males and females (but significance for only one sex---``substrate 
+  choice correlated significantly with food choice in males'') the authors go on to describe biologically why the 
+  correlation would be significant for males but not females.
+\citep{MerilaitaandJormalainen1997}
+\end{itemize}
+
+\begin{itemize}
+  \item To do
+  	\subitem unsort bib for convenient lookup of types of cites
+    \subitem links in bib to pdfs
+\end{itemize}
