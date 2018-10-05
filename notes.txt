@@ -7,3 +7,19 @@ biorxiv 25 Oct!!
 * Bridge from possibly a quote that Morgan is tracing ("If NHST is as idiotic …" ) to Tukey ("three outcomes") to:
 	* people keep rediscovering this, maybe because language a usage keep confusing them
 	* https://www.econstor.eu/bitstream/10419/46356/1/640578543.pdf (Kramer)
+
+2018 Oct 5 (Fri) Not a meeting, some ideas from Morgan 
+======================================================
+
+* New draft written
+
+* Moving notes from the main text here
+
+* Too much emphasis on incorrect language possibly. Just a few key examples maybe instead of a full table
+
+* Short and to the point: 1) Lots of people have thought about this, demonized it, and suggested it should be removed from science altogether. 2) We suggest that NHST is useful (see the sign of the effect clearly) and that most of the errors in interpretation are because of language. 3) A few examples and suggestions.
+
+* Venue: 
+	* Forum in Trends in E and E: max 1200 words?
+	* Note in The American Naturalist: max 3000 words? Perspectives article in Nature?
+	* Rejected by Oikos forum!
