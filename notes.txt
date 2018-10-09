@@ -18,6 +18,7 @@ Venues:
 	* has a statistical notes section, we would need an inquiry
 * Frontiers in EE
 	* All OA
+	* [MK]: I think I like this option. "review-type papers which showcase ideas not yet widely accepted by the scientific community"
 
 2018 Sep 25 (Tue)
 =================
