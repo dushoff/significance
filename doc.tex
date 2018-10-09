@@ -23,17 +23,13 @@ Here, we argue that NHST remains useful, and that pervasive misuse can be reduce
 \section*{The null hypothesis is false}
 
 In most biological studies, the null hypothesis is known or believed to not be strictly true.
-Even in cases where the null hypothesis is sensible \citep[e.g., particle physics][]{Staley2017} \pval testing does not provide a route to confirmation.
-\bmb{¿ clarify ?}
-This being the case, it is worth asking how NHST has survived ``if it is as idiotic as \ldots long believed''. 
-\jd{Why does Morgan cite Kramer?}
-\bmb{perhaps [IIRC] because it was an indirect ref?}
-\citet{Kramer2011}.
+Even in cases where the null hypothesis is sensible (e.g., particle physics, \cite{Staley2017}), NHST does not provide evidence that a difference is exactly zero.
+This being the case, it is worth asking how NHST has survived ``if it is as idiotic as \ldots long believed'' \citet[cited in \cite{Kramer2011}]{ZiliakandMcCloskey2008}.
 
 The value of NHST can be seen in something like a permutation-based t-test \cite[Chapter 1]{GoodBook}: it provides a simple, robust framework to ask whether we can tell \emph{which} mean is bigger. 
 More generally, testing the null hypothesis is a proxy for asking whether we clearly see a signal of how our data differs from it.
 In many cases, this comes down simply to whether we can be confident of the \emph{sign} of a difference or a correlation coefficient \citep{robinson2001past}. 
-In other cases (e.g., testing the overall effect of a categorical predictor with more than two levels), it may not be simple to describe the difference, but NHST is still a reasonable, accepted way to evaluate whether an effect has been seen clearly.
+In other cases (e.g., a one-way ANOVA), it may not be simple to describe the difference, but NHST is still a reasonable, accepted way to evaluate whether an effect has been seen clearly.
 
 The ``idiocy'', if any, comes in the interpretive step. A statistical fact (``we have \emph{seen} a difference between the groups'', which should immediately prompt the question ``what have you learned \emph{about} that difference?'') is interpreted as a scientific fact (``there \emph{is} a `significant' difference between the groups), which is often seen as an end in itself: ``we showed that the groups differ''.
 
@@ -123,8 +119,7 @@ We agree with \citet{Cohen1994} and others \citep{Goodman1999, ZiliakandMcCloske
 We argue that the use of ``statistical clarity'' reinforces the need for confidence intervals and effect sizes by making it clearer that bald statements about \pvals are insufficient. 
 The statement ``The difference between our control and treatment groups was not statistically clear ($p = 0.30$)'' is noticeably incomplete; an effect size and confidence interval are required to complete the story.
 
-\jd{Not sure how this P. fits in, either. I guess I'd like to keep it, though.}
-We echo previous statements in favor of ``neglected factors'' (prior and related evidence, plausibility of mechanism, study design and data quality, real world benefits, novelty and other factors) \citep{McShaneetal.2017} and reporting of \emph{a priori} analysis of statistical power to avoid emphasis on implausibly large effects given low statistical power \citep[the ``winner's curse''][]{GelmanandCarlin2014, SzucsandIoannidis2017, Bernardietal.2017}.  
+Improving language will not by itself solve all of the known problems with current statistical practice. We echo previous statements in favor of ``neglected factors'' (prior and related evidence, plausibility of mechanism, study design and data quality, real world benefits, novelty and other factors) \citep{McShaneetal.2017} and reporting of \emph{a priori} analysis of statistical power to avoid emphasis on implausibly large effects given low statistical power \citep[the ``winner's curse''][]{GelmanandCarlin2014, SzucsandIoannidis2017, Bernardietal.2017}.  
 Additionally, we support the idea of writing a statistical journal that chronicles all steps in the analytical process \citep{Kassetal.2016}, and clearly delineating the boundary between inferences based on \emph{a priori} hypotheses and discoveries from \emph{post hoc} data exploration.
 
 Whether or not our recommendations are broadly adopted by authors, reviewers, and editors, they can be useful for individual researchers who want to help themselves think clearly about NHST results. We have found that rephrasing NHST statements that we encounter (in the literature, or in seminar presentations) in terms of clarity has already helped us with both interpretation and communication.

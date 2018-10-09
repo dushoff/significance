@@ -45,6 +45,9 @@ Sources += chicago2.bst wlpeerj.cls
 Sources += main.tex doc.tex
 main.pdf: doc.tex main.tex
 
+main.compare.tex: main.tex.*.oldfile main.tex
+	Unfinished
+
 ## Notes 
 Sources += refs.txt notes.txt
 
