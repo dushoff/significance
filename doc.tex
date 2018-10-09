@@ -16,17 +16,48 @@
 Statisticians and scientists have bemoaned the shortcomings of null hypothesis significance testing (NHST) for nearly a century \citep{Cohen1994}.
 Books and articles proposing the de-emphasis or abandonment of the \pval have been cited thousands of times \citep{Cohen1994, Goodman1999, Wilkinson1999, ZiliakandMcCloskey2008, WassersteinandLazar2016}. These works plead for a focus on effect sizes and confidence intervals, and point out that null effects that truly have zero magnitude are unrealistic or impossible in most fields outside of the hard physical sciences \citep{Meehl1990, Tukey1991, Cohen1994}. Yet, \pvals without confidence intervals (or even effect sizes) and references to null effects still pervade the scientific literature at all levels up to and including articles in high-impact journals.
 
-In a meta-analysis of 356 studies \citet{Bernardietal.2017} found that 72\% of studies contained an ambiguous use of the term ``significant'', 49\% interpreted non-significant effects as zero effects, and 44\% failed to report a comprehensible effect size. The misuse and misinterpretation of NHST is so frequent that there have been recent calls for drastically reducing \citep{SzucsandIoannidis2017} or abandoning \citep{McShaneetal.2017} its use. Other prescriptions have included the complete abandonment of frequentist statistics \bmb{CITE: is it OK to include this here, or it too distracting?}, or the use of a stricter significance threshold (e.g. $p < 0.005$: \citealt{Benjaminetal.2018}); however, the former seems impractical, while the latter is unlikely to reduce the misuse and misinterpretation of \pvals, or the publication bias imposed by any \pval threshold \citep{Ridleyetal.2007}.
+In a meta-analysis of 356 studies \citet{Bernardietal.2017} found that 72\% of studies contained an ambiguous use of the term ``significant'', 49\% interpreted non-significant effects as zero effects, and 44\% failed to report a comprehensible effect size. The misuse and misinterpretation of NHST is so frequent that there have been recent calls for drastically reducing \citep{SzucsandIoannidis2017} or abandoning \citep{McShaneetal.2017} its use. Other prescriptions have included the complete abandonment of frequentist statistics \citeneeded, or the use of a stricter significance threshold (e.g. $p < 0.005$: \citealt{Benjaminetal.2018}); however, the former seems impractical, while the latter is unlikely to reduce the misuse and misinterpretation of \pvals, or the publication bias imposed by any \pval threshold \citep{Ridleyetal.2007}.
 
-\citet{Kramer2011} points out Ziliak and McCloskey's (\citeyear{ZiliakandMcCloskey2008}) query how could NHST possibly have survived ``\ldots if it is as idiotic as we and other critics have so long believed''. We believe that NHST itself \bmb{[although dangerously prone to misuse?]} is not as idiotic as suggested; the idiocy associated with NHST is the language we use in describing it. A strong argument in favor of NHST is that testing the null hypothesis (even though we usually know that it's false, and can never prove that it's true) is a proxy for asking whether we can see a difference clearly. In many cases, this comes down simply to whether we can be confident of the \emph{sign} of a difference or a correlation coefficient \citep{robinson2001past}. 
+Here, we argue that NHST remains useful, and that pervasive misuse can be reduced through a linguistic change: using the language of statistical ``clarity'' instead of statistical ``significance''.
+
+\section*{The null hypothesis is false}
+
+In most biological studies, the null hypothesis is known or believed to not be strictly true.
+Even in cases where the null hypothesis is sensible (e.g., particle physics) \pval testing does not provide a route to confirmation.
+This being the case, it is worth asking how NHST has survived `` if it is as idiotic as \ldots long believed''. 
+\jd{Why does Morgan cite Kramer?} \citet{Kramer2011}.
+
+The value of NHST can be seen in something like a permutation-based t-test \cite{GoodBook}: it provides a simple, robust framework to ask whether we can tell \emph{which} mean is bigger. 
+More generally, testing the null hypothesis is a proxy for asking whether we clearly see a signal of how our data differs from it.
+In many cases, this comes down simply to whether we can be confident of the \emph{sign} of a difference or a correlation coefficient \citep{robinson2001past}. 
+In other cases (e.g., multi-way ANOVA), it may not be simple to describe the difference, but NHST is still a reasonable, accepted way to evaluate whether something has been seen clearly.
+
+The ``idiocy'', if any, comes in the interpretive step. A statistical fact (``we have \emph{seen} a difference between the groups'', which should immediately prompt the question ``what have you learned \emph{about} that difference?'') is interpreted as a scientific fact (``there \emph{is} a `significant' difference between the groups), which is often seen as an end in itself: ``we showed that the groups differ''.
+
+\section*{The \pval is a property of the study}
+
+We often see sentences like, ``X et al. showed that there is no significant effect of Y on Z'' with the implication that this effect can now be assumed to be absent (or unimportant). In fact, the sentence is erroneous even before we get to the implication: significance tests provide information about \emph{a data set} -- that is, about a study, not about the study system \citep{HoenigandHeisey2001}.
+Indeed, a very small effect can lead to $p < 0.05$, when data is abundant (or noise is small); or a very large one can lead to $p > 0.05$ when the sample is small or noisy. 
+
+The statement ``X et al. showed that Y has a statistically significant effect on Z'' is similarly misleading.
+Frequentist statistics effectively assume that the effect is present (or at least, admit that it can't be disproven).
+The question is whether it is seen in a particular data set.
+The statement ``X et al. were able to see the effect of Y on Z'' is not only more accurate, but it appropriately implies that something is missing: \emph{What} effect did they see?
 
 \section*{Statistical Clarity}
 
-Using the language of ``statistical clarity'' would help researchers escape the trap of accepting the null hypothesis, reduce multiple types of misinterpretation associated with accepting the null hypothesis, and allow for the continued use of NHST as a method of inference for for whether we can be confident of the sign of a difference (e.g. see \citealt{Abelson1997} for arguments for NHST \bmb{what's in Abelson? How much of our argument do they anticipate?}). The use of ``significance'' to describe the results of hypothesis tests is deeply, and sometimes subtly, misleading, because it is at odds with other meanings of the word: the \pval is not an accurate gauge of whether a result is large in magnitude, biologically important, or relevant. ``Clarity,'' on the other hand, is an apt term for what NHST actually evaluates. \citet{jones2000sensible} and \citet{robinson2001past} suggest that researchers should report $p < 0.05$ using language such as ``the direction of the differences among the treatments was undetermined''. While this is a step in the right direction, replacing ``significance'' with ``clarity'' is a more complete, direct, and universal change that will improve communication and reduce sloppy thinking.
+The language of ``statistical clarity'' could help researchers escape various logical traps while interpreting the results of NHST, allowing for the continued use of NHST as a simple, robust method of evaluating whether a data signal is clear (see \citealt{Abelson1997} for arguments for NHST \bmb{what's in Abelson? How much of our argument do they anticipate?}).
+The use of ``significance'' to describe the results of hypothesis tests is deeply, and sometimes subtly, misleading, because it is at odds with other meanings of the word: the \pval is not an accurate gauge of whether a result is large in magnitude, biologically important, or relevant. ``Clarity,'' on the other hand, is an apt term for what NHST actually evaluates. 
+\citet{jones2000sensible} and \citet{robinson2001past} suggest that researchers should report $p > 0.05$ using language such as ``the direction of the differences among the treatments was undetermined''. This is a step in the right direction. 
+Replacing ``significance'' with ``clarity'' takes this further, and has the promise to substantially improve statistical communication.
 
-We often see sentences like, ``X et al. showed that there is no significant effect of Y on Z'' with the implication that this effect can now be assumed to be absent (or unimportant). In fact, the sentence is erroneous even before we get to the implication: X et al.'s significance test provides information about \emph{their particular study}, not about the underlying processes \citep{HoenigandHeisey2001}. Indeed, because a \pval is a property of the data, $p < 0.05$ can be obtained for a very small effect with a sufficently large  sample, or for a very large effect with a sufficiently small or noisy sample. A better formulation would be ``X et al. did not find a significant effect of Y on Z.'' This mistake is harder to make using the language of clarity:  ``X et al. showed that the effect of Y on Z is unclear'' is awkward. Similarly, ``We did not find a clear difference in response between the control and sham groups'' is both more colloquial and harder to transform into a misleading statement than ``We did not find a significant difference \ldots''. \citet{Bernardietal.2017} complained that ``\ldots sociological and social significance are sacrificed on the altar of statistical significance''. Describing statistical tests in terms of clarity would allow ``significant'' to reclaim its common English definition and reduce conflation between statistical results and substantive significance.
+For example, the sentence ``X et al. showed that the effect of Y on Z is statistically unclear'', is noticeably awkward. It seems less like a statement about the study system, and suggests the more straightforward ``did not find a statistically clear effect.''
+Similarly, ``We did not find a clear difference in response between the control and sham groups'' is both more colloquial and harder to transform into a misleading statement than ``We did not find a significant difference \ldots''.
+\citet{Bernardietal.2017} complained that ``\ldots sociological and social significance are sacrificed on the altar of statistical significance''.
+Describing statistical tests in terms of clarity would allow ``significant'' to reclaim its common English definition and reduce conflation between statistical results and substantive significance.
 
-Descriptions of statistical results using the language of clarity should begin with reference to the effect. For example, ``The difference between the control and treatment group was not statistically clear.'' Table~\ref{quotetab} shows published examples of statements that misinterpret \pvals in three different ways and demonstrates how to rephrase them in the language of clarity.
+Descriptions of statistical results using the language of clarity should begin with reference to the effect. 
+For example, ``The difference between the control and treatment group was not statistically clear.'' Table~\ref{quotetab} shows published examples of statements that misinterpret \pvals in three different ways and demonstrates how to rephrase them in the language of clarity.
 
 \newcommand{\ourcomment}[1]{[\emph{#1}]}
 \begin{table}
@@ -42,7 +73,7 @@ Toxins accumulate after acute exposure but have no effect on behaviour
 & Toxins accumulate after acute exposure but their effects on behaviour are statistically unclear
 \\
 
-\rowcolor{lightgray}
+\rowcolor{vlg}
 There was no effect of elevated carbon dioxide on reproductive behaviors 
 & The effect of elevated carbon dioxide on reproductive behaviors was statistically unclear
 \\
@@ -66,50 +97,35 @@ The finding that species richness showed no significant relationship with the ar
 This correlation was significant in males ($\rho=0.35$, P \textless 0.05) but not females ($\rho=0.35$, NS). \ldots \ourcomment{The authors later write as though they have demonstrated a difference between males and females}
 & Although males and females show the same correlation coefficient ($\rho=0.35$), the sign of the coefficient is statistically clear only in males  \ldots \ourcomment{This phrasing may suggest to the authors that confidence intervals are called for.}
 \\
-\rowcolor{lightgray}
+\rowcolor{vlg}
 \ldots risk of low BMD [bone mineral density] remained greater in HCV-coinfected women versus women with HIV alone
 (adjusted OR 2.99, 95\% CI 1.33–6.74), but no association was found between HCV coinfection and low BMD in men 
-(adjusted OR 1.26, 95\% CI 0.75–2.10). \ldots  \ourcomment{The authors do not directly compare men and women, but they state:}
-The precise mechanisms for the association between viral hepatitis and low BMD in HIV-infected women but not men 
-remain unclear.
+(adjusted OR 1.26, 95\% CI 0.75–2.10). \ldots 
+The precise mechanisms for the association between viral hepatitis and low BMD in HIV-infected women but not men remain unclear.
 & 
 \ldots  risk of low BMD [bone mineral density] remained greater in HCV-coinfected women versus women with HIV alone
 (adjusted OR 2.99, 95\% CI 1.33–6.74), but the association between HCV coinfection and low BMD in men was not
 statistically clear (adjusted OR 1.26, 95\% CI 0.75–2.10). \ldots  Pursuing biological differences between women and men in the effect of HIV on BMD would be premature given these results.
 \\
 \end{tabular}
-\captionof{table}{Examples of misinformed language in peer-reviewed papers (citations withheld out of courtesy, available by request) using our proposed  language of clarity.}
+\captionof{table}{Examples of misleading language in peer-reviewed papers (citations available by request), and revisions using our proposed  language of clarity.}
 \label{quotetab}
 \end{table}
 
-\section*{Further recommendations}
+\subsection*{Conclusions}
 
-\bmb{this section seems a bit ``grab-baggy''. Can we restructure it so it feels more coherent? I don't mind including these points, but I would rather leave them out than dilute the message/bog the reader down.}
+We believe that NHST is useful as a simple, robust way to ask whether an effect can be seen clearly in a particular data set \citep{robinson2001past}, and that careful, clarity-based language can reduce misinterpretation and miscommunication.
 
-\subsection*{Focal vs non-focal hypotheses}
+We agree with \citet{Cohen1994} and others \citep{Goodman1999, ZiliakandMcCloskey2008, WassersteinandLazar2016}, that scientific communication and understanding will be improved by a shift away from \pvals to effect sizes and confidence intervals. 
+We argue that the use of ``statistical clarity'' reinforces the need for confidence intervals and effect sizes by making it clearer that bald statements about \pvals are insufficient. 
+The statement ``The difference between our control and treatment groups was not statistically clear ($p = 0.30$)'' is noticeably incomplete; an effect size and confidence interval are required to complete the story.
 
-\bmb{I'd like to consider omitting the next (sub)section. The connection between the title and the text is not very clear, and I don't think it's the most important point. (If it can be made clear and punchy I don't mind including it.) Interesting discussion of using Shapiro-Wilk $W$ as an effect size (spoiler: it might be a bad idea)  \underline{\href{https://stats.stackexchange.com/questions/2492/is-normality-testing-essentially-useless}{here}}, and general discussion of uselessness of Normality testing \underline{\href{https://stats.stackexchange.com/questions/289136/is-the-shapiro-wilk-test-w-an-effect-size}{here}}. Also, we should be able to invent some  typically bad wording without breaking our protocol and mentioning a particular article here: ``Wording such as `The Shapiro-Wilk test gave $p>0.05$, allowing us to conclude that the data are normally distributed' \ldots''}
-  
+\jd{Not sure how this P. fits in, either. I guess I'd like to keep it, though.}
+We echo previous statements in favor of ``neglected factors'' (prior and related evidence, plausibility of mechanism, study design and data quality, real world benefits, novelty and other factors) \citep{McShaneetal.2017} and reporting of \emph{a priori} analysis of statistical power to avoid emphasis on implausibly large effects given low statistical power \citep[the ``winner's curse''][]{GelmanandCarlin2014, SzucsandIoannidis2017, Bernardietal.2017}.  
+Additionally, we support the idea of writing a statistical journal that chronicles all steps in the analytical process \citep{Kassetal.2016}, and clearly delineating the boundary between inferences based on \emph{a priori} hypotheses and discoveries from \emph{post hoc} data exploration.
 
-Accepting the null is especially common when researchers perform diagnostic tests of the assumptions of statistical tests. For example, a Shapiro-Wilk test of normality that returns $p > 0.05$ means that it is statistically unclear how the data departs from normality (the data is collected from a complicated world and does depart from normality). Without the goal of picking on any paper in specific, ``\ldots allowing us to accept the null hypothesis about the normal spot count distribution.'' \citep{Karulinetal.2015} is common language that should be avoided.
-  
-\subsection*{Non-inferiority tests}
+Whether or not our recommendations are broadly adopted by authors, reviewers, and editors, they can be useful for individual researchers who want to help themselves think clearly about NHST results. We have found that rephrasing NHST statements that we encounter (in the literature, or in seminar presentations) in terms of clarity has already helped us with both interpretation and communication.
 
-\bmb{(1) would be good to have a citation here; do any of the ``best practices''/NHST criticisms bring up N-I tests? If not, is there a good intro reference? If it's \emph{not} widely stated in the NHST-criticism literature, that strengthens the case for including it here. (2) This needs more context, if we include it; if as suggested it's not widely pointed out in the NHST-crit lit, ``One tool that is well known in the biostatistical world but underappreciated in more applied areas \ldots''. Or, ``Reporting CIs provides meaningful information about how small a measured effect might be \ldots if researchers want to be perform a formal test that biological effects are small \ldots'' As I understand it non-inferiority tests are directed; could one construct a p-value for an \emph{unsigned} test, i.e. trying to show that $|\beta|<T$ for some pre-specified $T$? Or am I sneaking up on an \emph{a priori} power analysis?}
-
-Following a shift in language, we suggest using a non-inferiority test to test for the hypothesis that biological effects are small. Consider the following example. A hospital is considering switching from bulky, expensive surgical face masks to lighter weight, cheaper masks. A clinical trail that tests the effectiveness of both masks and finds $p > 0.05$ is not a success; this tells the hospital that the difference between the masks is not statistically clear! What the hospital actually want to know is whether the cheaper, lighter masks are \emph{only a little bit worse than the bulky, expensive masks}. This requires a $H_{0}$ that defines the target difference in effectiveness of the two masks that the hospital is willing to accept to make the transition. We note that this statistical test should be set up as a one-tailed test; the logical, \emph{a priori} assumption is that the bulky, expensive masks are more effective. In this case, a $p < 0.05$ tells the hospital that the difference between the new masks and old masks is small and that it they can proceed with the switch.
-
-\subsection*{Previous suggestions are compatible with a change in language}
-
-\bmb{I'd be OK with making this section alone be our Conclusions (if we don't want to clean up/improve the previous sections)}
-Following the lead of \citet{Cohen1994} and others \citep{Goodman1999, ZiliakandMcCloskey2008, WassersteinandLazar2016}, we conclude with a plea for an increased emphasis on effect sizes and confidence intervals. However, we suggest that the use of ``statistical clarity'' reinforces the need for confidence intervals and effect sizes by making it clearer that bald statements about \pvals are insufficient. The statement ``The difference between our control and treatment groups was statistically clear ($p = 0.007$)'' is unambiguously incomplete; an effect size and confidence interval are required to complete the story.
-
-We echo previous statements in favor of ``neglected factors'' (prior and related evidence, plausibility of mechanism, study design and data quality, real world benefits, novelty and other factors) \citep{McShaneetal.2017} and reporting of \emph{a priori} analysis of statistical power to avoid emphasis on implausibly large effects given low statistical power \citep[the ``winner's curse''][]{GelmanandCarlin2014, SzucsandIoannidis2017, Bernardietal.2017}.  Additionally, we support the idea of writing a statistical journal that chronicles all steps in the analytical process \citep{Kassetal.2016}, and clearly delineating the boundary between inferences based on \emph{a priori} hypotheses and discoveries from \emph{post hoc} data exploration.
-
-Whether or not our recommendations are broadly adopted by authors, reviewers, and editors, they can be useful for individual researchers who want to help themselves think clearly about NHST results. We have found that rephrasing NHST statements that we encounter (in the literature, or in seminar presentations) in terms of clarity has helped us to correctly interpret their meanings.
-
-\subsection*{Acknowledgements}
+\subsection*{Acknowledgments}
 
 We thank members of the Dushoff and Bolker labs for helpful comments on the first draft of the manuscript.
-
-
