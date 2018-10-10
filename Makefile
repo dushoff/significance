@@ -45,6 +45,7 @@ Sources += chicago2.bst wlpeerj.cls
 Sources += main.tex doc.tex
 main.pdf: doc.tex main.tex
 
+Ignore += *.compare.tex
 ## latexdiff is not working well here; maybe because of the main/doc structure
 main.compare.tex: main.tex.*.oldfile main.tex
 	$(latexdiff)
