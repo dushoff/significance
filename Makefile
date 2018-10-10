@@ -45,8 +45,21 @@ Sources += chicago2.bst wlpeerj.cls
 Sources += main.tex doc.tex
 main.pdf: doc.tex main.tex
 
+## latexdiff is not working well here; maybe because of the main/doc structure
 main.compare.tex: main.tex.*.oldfile main.tex
-	Unfinished
+	$(latexdiff)
+
+######################################################################
+
+## Submission
+## Oikos proposal: https://docs.google.com/document/d/1U30hJsz7iz8wQidHo7oYEwB-y1H_xvmi4am7cntePvs/
+
+## Preparing to submit to Ecology
+Sources += cover.md
+Ignore += cover.html
+cover.html: cover.md
+
+######################################################################
 
 ## Notes 
 Sources += refs.txt notes.txt
@@ -68,10 +81,6 @@ Drop:
 -include $(ms)/git.mk
 
 -include $(ms)/texdeps.mk
-# -include $(ms)/newtalk.mk
-
-# -include $(ms)/modules.mk
-
-# -include $(ms)/webpix.mk
+-include $(ms)/pandoc.mk
 # -include $(ms)/wrapR.mk
 
