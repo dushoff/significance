@@ -35,7 +35,7 @@
                 top=1in,%
                 bottom=1in,%
                 headheight=12pt,%
-                letterpaper]{geometry}%
+                letterpaper]{geometry}
                 
 \RequirePackage[labelfont={bf,sf},%
                 labelsep=period,%
@@ -173,11 +173,12 @@
 % \if@peerjlineno\internallinenumbers\fi%
 % {\color{color1}\keywordname\hspace*{1em}} \@keywords%
 % }%
-}%
-\vskip25pt%
-}%
-}%
+%}
+%\vskip25pt%
+%}%
+%}%
 %-----------------------------------------------
+}}
 \setlength{\columnsep}{0.55cm} % Distance between the two columns of text
 
 \definecolor{color1}{RGB}{0,0,0} % Color of section headings
