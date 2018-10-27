@@ -1,0 +1,52 @@
+\newcommand{\ourcomment}[1]{[\emph{#1}]}
+\begin{table}
+\setlength\tabcolsep{1cm}.
+\begin{tabular}{p{7.0cm}p{7.0cm}}
+\textbf{Language from published articles} & \textbf{Rewritten using ``clarity''} \\
+\hline\\
+
+\multicolumn{2}{c}{\emph{\textbf{Accepting the null hypothesis ($\boldsymbol{p > 0.05 \nRightarrow}$ no effect)}}} \\
+\hline
+
+Toxins accumulate after acute exposure but have no effect on behaviour
+& Toxins accumulate after acute exposure but their effects on behaviour are statistically unclear
+\\
+
+\rowcolor{vlg}
+There was no effect of elevated carbon dioxide on reproductive behaviors 
+& The effect of elevated carbon dioxide on reproductive behaviors was statistically unclear
+\\
+
+The finding that species richness showed no significant relationship with the area of available habitat is surprising because richness is usually strongly influenced by landscape context 
+& Although species richness is usually strongly influenced by landscape context, we were unable to find a statistically clear relationship in this study
+\\ \\
+
+\multicolumn{2}{c}{\emph{\textbf{Inferring weak effects from large \pvals}} \citep{WassersteinandLazar2016}}
+\\
+\hline
+%% left ``P values'' unchanged here (not \pvals) since it's a quotation
+\ldots\ differences between treatment and control groups were nonsignificant, with P values of at least 0.3, and most in the range $0.7 \leq P \leq 0.9$.
+& \ldots\ differences between treatment and control groups were not statistically clear (all $P > 0.05$) \ourcomment{confidence intervals would also be valuable here!}
+\\ \\
+
+\multicolumn{2}{c}{\emph{\textbf{The difference between ``clear'' and ``not clear'' is not clear}} \citep{GelmanandStern2006}}
+\\
+\hline
+
+This correlation was significant in males ($\rho=0.35$, P \textless 0.05) but not females ($\rho=0.35$, NS). \ldots \ourcomment{The authors later write as though they have demonstrated a difference between males and females}
+& Although males and females show the same correlation coefficient ($\rho=0.35$), the sign of the coefficient is statistically clear only in males  \ldots \ourcomment{This phrasing may suggest to the authors that confidence intervals are called for.}
+\\
+\rowcolor{vlg}
+\ldots risk of low BMD [bone mineral density] remained greater in HCV-coinfected women versus women with HIV alone
+(adjusted OR 2.99, 95\% CI 1.33–6.74), but no association was found between HCV coinfection and low BMD in men 
+(adjusted OR 1.26, 95\% CI 0.75–2.10). \ldots 
+The precise mechanisms for the association between viral hepatitis and low BMD in HIV-infected women but not men remain unclear.
+& 
+\ldots  risk of low BMD [bone mineral density] remained greater in HCV-coinfected women versus women with HIV alone
+(adjusted OR 2.99, 95\% CI 1.33–6.74), but the association between HCV coinfection and low BMD in men was not
+statistically clear (adjusted OR 1.26, 95\% CI 0.75–2.10). \ldots  Pursuing biological differences between women and men in the effect of HIV on BMD would be premature given these results.
+\\
+\end{tabular}
+\captionof{table}{Examples of misleading language in peer-reviewed papers (citations available by request), and revisions using our proposed  language of clarity.}
+\label{quotetab}
+\end{table}

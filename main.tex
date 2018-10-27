@@ -1,6 +1,6 @@
 %% https://tex.stackexchange.com/questions/238349/error-option-clash-for-package-xcolor
-\PassOptionsToPackage{table,dvipsnames}{xcolor}
-\documentclass[12pt, english]{wlpeerj} % Just a convenient template
+%% \PassOptionsToPackage{table,dvipsnames}{xcolor}
+\documentclass[12pt, english, dvipsnames, table]{wlpeerj} % Just a convenient template
 \usepackage{xcolor}
 \definecolor{vlg}{rgb}{0.88, 0.88, 0.88}
 \usepackage{palatino}
@@ -26,6 +26,10 @@
 \newcommand{\figref}[1]{Figure~\ref{fig:#1}}
 \reversemarginpar
 \singlespacing
+\raggedright
+\parskip 0pt 
+\usepackage{indentfirst}
+\setlength{\parindent}{0.5cm}
 
 %% This whole effort was a disaster!
 %% \usepackage[left=2.0in]{geometry} % For reasonable spacing with todonotes
@@ -41,8 +45,7 @@
 \newcommand{\pvals}{p-values\xspace}
 \newcommand{\citeneeded}{\textbf{CITE}}
 
-\title{I can see clearly now: reinterpreting statistical significance
-}
+\title{I can see clearly now: reinterpreting statistical significance}
 
 \author[1]{Jonathan Dushoff}
 \author[1]{Morgan P. Kain}
@@ -58,9 +61,10 @@ L8S 4L8 Canada}
 
 \input{doc.tex}
 
-\newpage
-\singlespacing
+\clearpage
 
 \bibliography{stat_signif}
+
+%\clearpage
 
 \end{document}
