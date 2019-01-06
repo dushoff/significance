@@ -52,6 +52,12 @@ main.compare.tex: main.tex.*.oldfile main.tex
 
 ######################################################################
 
+## Revision
+
+Sources += rebuttal.dmu
+
+######################################################################
+
 ## Submission
 ## Oikos proposal: https://docs.google.com/document/d/1U30hJsz7iz8wQidHo7oYEwB-y1H_xvmi4am7cntePvs/
 

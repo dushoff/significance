@@ -1,0 +1,94 @@
+
+
+---------- Forwarded message ---------
+From: Morgan Kain <morganpkain@gmail.com>
+Date: Wed, Jan 2, 2019 at 12:03 PM
+Subject: Fwd: Methods in Ecology and Evolution - Decision on Manuscript ID MEE-18-11-758
+To: Dushoff, Jonathan <dushoff@mcmaster.ca>, Ben Bolker <bbolker@gmail.com>
+
+
+Nice
+
+---------- Forwarded message ---------
+From: Methods in Ecology and Evolution <onbehalfof@manuscriptcentral.com>
+Date: Wed, Jan 2, 2019 at 10:40 AM
+Subject: Methods in Ecology and Evolution - Decision on Manuscript ID MEE-18-11-758
+To: <kainm@mcmaster.ca>
+
+
+02-Jan-2019
+
+MEE-18-11-758 I can see clearly now: reinterpreting statistical significance
+
+Dear Mr Morgan Kain,
+
+Thank you for submitting your manuscript to Methods in Ecology and Evolution. I have now received the reviewers' reports and a recommendation from the Associate Editor who handled the review process. Copies of their reports are included below. As you will see, the reviewers are positive about the value of the work but have also made a number of suggestions for improvement. I have considered your paper in light of the comments received and I would like to invite you to prepare a minor revision. I'm not sure if this is easy or difficult to respond to: the comments are general, so could be difficult, but I also do not expect to see any major changes.
+
+In your revision, please make sure that you take full account of the above comments and those made in the reports below. Please note that Methods in Ecology and Evolution does not automatically accept papers after revision, and an invitation to revise a manuscript does not represent commitment to eventual publication on our part. We will reject revised manuscripts if they are returned without satisfactory responses to the reviewers' comments. When returning the revised paper, please show point-by-point how you have dealt with the various comments in the appropriate section of the submission form.
+
+Please return your revision by 23-Jan-2019. If you need longer, please let us know so we can update our system accordingly.
+We look forward to hearing from you in due course.
+
+Sincerely,
+
+Professor Robert B. O'Hara
+Senior Editor, Methods in Ecology and Evolution
+
+Reply to:
+Mr Chris Grieves
+Methods in Ecology and Evolution Editorial Office
+coordinator@methodsinecologyandevolution.org
+
+
+Associate Editor Comments to Author:
+Associate Editor
+Comments to the Author:
+I guess I should thank you for a clear and significant submission. There is a consensus between reviewers and myself that this is a useful and interesting manuscript. The reviewers make a few general points that should be considered. I think it is important to draw the line clearly from "clear" to the reporting of effect sizes: this will probably also help the reader see how the two connect the two. Aside from that I have no definite recommendations, other than to make sure this is resubmitted.
+
+
+Reviewer(s)' Comments to Author:
+Reviewer: 1
+
+Comments to the Corresponding Author
+This perspective paper proposes that we change the language we use to report significance of hypothesis tests. They suggest that a simple change in the language will help clarify the meaning and also help highlight the importance of effect sizes and confidence intervals. Overall, it’s well-written and is a good contribution to this important subject area. We should be open to ideas that experiment and potentially improve how we use NHST.
+
+I agree that a downside of hypothesis testing is often (wrongly) seen as an end in itself, rather than the scientific knowledge that is gained from the test. However, I am not convinced that your suggestion will solve this. Here are my thoughts:
+
+2. I don’t understand the logic that using the term ‘clear’ automatically makes the need for effect sizes and confidence intervals more obvious. Can you explain this logical jump more fully within the manuscript?
+
+3. If some people adopt this terminology, whilst others do not, it could become a very confusing and unclear landscape of scientific understanding. I think this would have more strength if a single domain or several journals gave new guidelines to only use this term, however that would likely require a more evidence-based case than presented here.
+
+4. The philosophy of NHST is so deeply embedded within science, it seems unlikely that changing the terminology will change how people use or interpret NHST. For example ‘significance’ has a technical and objective meaning. ‘clear’ is a simpler word that is also more subjective. Using ‘clear’ may allow “significant” to reclaim its common definition, but perhaps ‘clear’ would then become a term that has a specific and altered meaning within scientific manuscripts, with all the same drawbacks that ‘significance’ now has. i.e. maybe the benefits would be short-lived until we are familiar with the new term.
+
+In some of the examples in your table, the sentences on the right are better, but that seems to be unconnected to the use ‘clear’. In 5th example, your phrasing is much improved, but seems that the word ‘clear’ could be replaced with ‘significant’ for the same effect. So this table seems to confound poor interpretation practice with the language used. I recognise that you claim the language will help the interpretation, but it’s difficult to judge that from these examples.
+
+Line 92 “promise to substantially improve statistical communication”. This is a bold and unsubstantiated claim!
+
+
+Reviewer: 2
+
+Comments to the Corresponding Author
+I really liked this piece! I have frequently been frustrated with the interpretation of p-values among my colleagues (and by myself, at different stages in the past) and so i welcome the clarity that you are trying to bring to this important point.
+
+As a brief summary of the paper's argument: the frequent misinterpretation of NHST is due to confusing language around the results of tests. The suggestion is that we switch to considering p-values as a measure of "clarity" : that is, how clearly an effect could be seen. This language is narrower by design: too narrow, in fact, to cover all the meanings we might want to extract from a statistical procedure. The hope then is that scientists would move on to describe exactly *what* was detected clearly: an effect size, a point estimate and confidence interval, etc.
+
+I was confused by the paragraph starting on Line 55. A "permutation-based t-test" is a very specific metaphor, and I don't think that readers will grasp the similarity to the p-values from, say, an ANOVA without a bit more signposting.  More generally, I expected this paragraph to summarize the "correct" interpretation of p-values, and perhaps to illustrate how and why they are used in scientific papers.
+
+My major concern from the beginning of this manuscript is actually mentioned by the authors themselves towards the end: the so-called "Winner's Curse". This is the idea, articulated by Andrew Gelman among others, that if an effect is "significant" it is also likely to be an overestimate. In low-powered studies, the estimated effect size can even be opposite in direction to the true effect, yet the p-value is still a low number.  Many ecologists (in my experience) believe that a low p-value indicates two things at the same time: first, that the study "worked"; second, that the effect is real. Neither is necessarily true, and neither can be reliably inferred from the p-value alone. I'm sure the authors are aware of these points, and i think it would be useful to expand on them a bit more.
+In brief, while I really like the idea of "seeing with clarity", i would appreciate some discussion of how to tell if one has clearly seen a mere mirage.
+
+I really enjoyed this manuscript and i think ecologists need to read it. I don't want to be negative, but I can't resist a skeptical question: is there any evidence that people will change their behaviours? Misinterpretation of p-values is but one of the many statistical and philosophical errors that pervade science. These will persist until incentive structures change. Until they do, people will continue to abuse their data, their analyses, and their interpretations.
+
+
+--
+Morgan Kain
+PhD Candidate (Biology)
+McMaster University 
+
+
+-- 
+McMaster University Department of Biology
+http://lalashan.mcmaster.ca/theobio/DushoffLab/
+https://twitter.com/jd_mathbio
+http://jd-mathbio.blogspot.com/
+
