@@ -33,7 +33,7 @@ $(ms)/%.mk: $(ms)/Makefile ;
 $(ms)/Makefile:
 	git submodule update -i
 
-# -include $(ms)/perl.def
+-include $(ms)/perl.def
 
 ######################################################################
 
@@ -45,9 +45,13 @@ Sources += chicago2.bst wlpeerj.cls
 Sources += main.tex doc.tex
 main.pdf: doc.tex main.tex
 
+Ignore += mee1.tex
+mee1.tex: doc.tex.fa24786.oldfile
+	$(copy)
+
 Ignore += *.compare.tex
 ## latexdiff is not working well here; maybe because of the main/doc structure
-main.compare.tex: main.tex.*.oldfile main.tex
+mee.compare.tex: mee1.tex doc.tex
 	$(latexdiff)
 
 ######################################################################
@@ -55,6 +59,11 @@ main.compare.tex: main.tex.*.oldfile main.tex
 ## Revision
 
 Sources += rebuttal.dmu
+Ignore += rebuttal.md rebuttal.html
+rebuttal.md: rebuttal.dmu rebut.pl
+	$(PUSH)
+
+rebuttal.html: rebut.pl
 
 ######################################################################
 
