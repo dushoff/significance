@@ -66,6 +66,7 @@ revisions.compare.pdf: revisions.compare.tex
 
 Sources += rebuttal.md
 
+Ignore += rebuttal.html
 rebuttal.html: rebuttal.md
 
 ######################################################################
