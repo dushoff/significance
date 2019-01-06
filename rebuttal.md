@@ -37,10 +37,12 @@ _As a brief summary of the paper's argument: the frequent misinterpretation of N
 
 _I was confused by the paragraph starting on Line 55. A "permutation-based t-test" is a very specific metaphor, and I don't think that readers will grasp the similarity to the p-values from, say, an ANOVA without a bit more signposting.  More generally, I expected this paragraph to summarize the "correct" interpretation of p-values, and perhaps to illustrate how and why they are used in scientific papers._
 
+We have rewritten the paragraph to be more straightforward.
+
 _My major concern from the beginning of this manuscript is actually mentioned by the authors themselves towards the end: the so-called "Winner's Curse". This is the idea, articulated by Andrew Gelman among others, that if an effect is "significant" it is also likely to be an overestimate. In low-powered studies, the estimated effect size can even be opposite in direction to the true effect, yet the p-value is still a low number.  Many ecologists (in my experience) believe that a low p-value indicates two things at the same time: first, that the study "worked"; second, that the effect is real. Neither is necessarily true, and neither can be reliably inferred from the p-value alone. I'm sure the authors are aware of these points, and i think it would be useful to expand on them a bit more. In brief, while I really like the idea of "seeing with clarity", i would appreciate some discussion of how to tell if one has clearly seen a mere mirage._
 
-This is an important concern. We have expanded our discussion of this point, while trying not to stray too far from our main focus.
+This is an important concern. We have expanded our discussion of this point, while trying not to stray too far from our main focus. TODO (I am thinking of adding a caveat section).
 
 _I really enjoyed this manuscript and i think ecologists need to read it. I don't want to be negative, but I can't resist a skeptical question: is there any evidence that people will change their behaviours? Misinterpretation of p-values is but one of the many statistical and philosophical errors that pervade science. These will persist until incentive structures change. Until they do, people will continue to abuse their data, their analyses, and their interpretations._
 
-We agree that this article will not change much, but we hope it will be part of a larger change in a good direction.
+Thanks for your kind words. We agree that this article will not change much, but we hope it will be part of a larger change in a good direction.
