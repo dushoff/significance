@@ -50,20 +50,23 @@ mee1.tex: doc.tex.fa24786.oldfile
 	$(copy)
 
 Ignore += *.compare.tex
-## latexdiff is not working well here; maybe because of the main/doc structure
+## latexdiff is hard with the main/doc structure
 mee.compare.tex: mee1.tex doc.tex
 	$(latexdiff)
+
+revisions.compare.tex: main.tex
+	perl -npe "s/doc.tex/mee.compare.tex/" $< > $@
+
+Sources += ldpre.sty
+revisions.compare.pdf: revisions.compare.tex
 
 ######################################################################
 
 ## Revision
 
-Sources += rebuttal.dmu
-Ignore += rebuttal.md rebuttal.html
-rebuttal.md: rebuttal.dmu rebut.pl
-	$(PUSH)
+Sources += rebuttal.md
 
-rebuttal.html: rebut.pl
+rebuttal.html: rebuttal.md
 
 ######################################################################
 
