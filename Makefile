@@ -42,7 +42,7 @@ $(ms)/Makefile:
 Sources += chicago2.bst wlpeerj.cls
 
 ## Manuscript
-Sources += main.tex doc.tex
+Sources += main.tex doc.tex table.tex
 main.pdf: doc.tex main.tex
 
 Ignore += *.review.tex
