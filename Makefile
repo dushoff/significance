@@ -45,19 +45,22 @@ Sources += chicago2.bst wlpeerj.cls
 Sources += main.tex doc.tex
 main.pdf: doc.tex main.tex
 
-Ignore += mee1.tex
-mee1.tex: doc.tex.fa24786.oldfile
+Ignore += *.review.tex
+%.review.tex: %.tex.fa24786.oldfile
 	$(copy)
 
 Ignore += *.compare.tex
 ## latexdiff is hard with the main/doc structure
-mee.compare.tex: mee1.tex doc.tex
+%.compare.tex: %.review.tex %.tex
 	$(latexdiff)
 
-revisions.compare.tex: main.tex
-	perl -npe "s/doc.tex/mee.compare.tex/" $< > $@
+ldpre.compare.tex: ldpre.tex
+	$(copy)
 
-Sources += ldpre.sty ldpre.tex
+revisions.compare.tex: main.tex Makefile
+	perl -npe "s/\.tex/.compare.tex/" $< > $@
+
+Sources += ldpre.tex
 revisions.compare.pdf: revisions.compare.tex
 
 ######################################################################
