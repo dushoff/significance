@@ -6,7 +6,7 @@ _This perspective paper proposes that we change the language we use to report si
 
 _I agree that a downside of hypothesis testing is often (wrongly) seen as an end in itself, rather than the scientific knowledge that is gained from the test. However, I am not convinced that your suggestion will solve this. Here are my thoughts:_
 
-Thanks for your perspective. We are also not convinced our suggestion will solve this major problem, to put it mildly. But we are hoping it will help (and think that in small ways it already has). We respond to your specific points below.
+Thanks for your perspective. We are also not convinced our suggestion will solve this major problem, to put it mildly. But we hope it will help (and think that in small ways it already has). We respond to your specific points below.
 
 _2. I don’t understand the logic that using the term ‘clear’ automatically makes the need for effect sizes and confidence intervals more obvious. Can you explain this logical jump more fully within the manuscript?_
 
@@ -45,4 +45,4 @@ This is an important concern. We have expanded our discussion of this point, whi
 
 _I really enjoyed this manuscript and i think ecologists need to read it. I don't want to be negative, but I can't resist a skeptical question: is there any evidence that people will change their behaviours? Misinterpretation of p-values is but one of the many statistical and philosophical errors that pervade science. These will persist until incentive structures change. Until they do, people will continue to abuse their data, their analyses, and their interpretations._
 
-Thanks for your kind words. We agree that this article will not change much, but we hope it will be part of a larger change in a good direction.
+Thanks for your kind words. We agree that this article cannot by itself overcome deeply embedded bad practice, but we hope it will be part of a larger change in a good direction.
