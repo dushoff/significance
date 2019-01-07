@@ -57,7 +57,7 @@ mee.compare.tex: mee1.tex doc.tex
 revisions.compare.tex: main.tex
 	perl -npe "s/doc.tex/mee.compare.tex/" $< > $@
 
-Sources += ldpre.sty
+Sources += ldpre.sty ldpre.tex
 revisions.compare.pdf: revisions.compare.tex
 
 ######################################################################
