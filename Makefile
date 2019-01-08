@@ -45,6 +45,8 @@ Sources += chicago2.bst wlpeerj.cls
 Sources += main.tex doc.tex table.tex
 main.pdf: doc.tex main.tex
 
+## Real reviewed MS fa24786
+
 Ignore += *.review.tex
 %.review.tex: %.tex.fa24786.oldfile
 	$(copy)
