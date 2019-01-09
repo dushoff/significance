@@ -1,10 +1,8 @@
-
+## gitroot/significance: the Clarity project
 
 ## Document main.pdf
 	## main.compare.pdf; control by changing review.tex target
 ## Rebuttal rebuttal.html
-
-## Hooks
 
 current: target
 target = Makefile
@@ -12,7 +10,7 @@ target = Makefile
 
 ###################################################################
 
-Sources += Makefile .ignore 
+Sources += Makefile 
 Ignore += .gitignore
 
 ######################################################################

@@ -1,4 +1,6 @@
 
+BB thinks we should have a preamble about how we're not solving the world's problems. JD is not so sure (especially since the first response tends in that direction already).
+
 Reviewer: 1
 ===========
 
