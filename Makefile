@@ -1,4 +1,9 @@
 
+
+## Document main.pdf
+	## main.compare.pdf
+## Rebuttal rebuttal.html
+
 ## Hooks
 
 current: target
@@ -46,9 +51,10 @@ Sources += main.tex doc.tex table.tex
 main.pdf: doc.tex main.tex
 
 ## Real reviewed MS fa24786
+## JD First pass 96679d
 
 Ignore += *.review.tex
-%.review.tex: %.tex.fa24786.oldfile
+%.review.tex: %.tex.96679d.oldfile
 	$(copy)
 
 Ignore += *.compare.tex
@@ -59,11 +65,11 @@ Ignore += *.compare.tex
 ldpre.compare.tex: ldpre.tex
 	$(copy)
 
-revisions.compare.tex: main.tex Makefile
+main.compare.tex: main.tex Makefile
 	perl -npe "s/\.tex/.compare.tex/" $< > $@
 
 Sources += ldpre.tex
-revisions.compare.pdf: revisions.compare.tex
+## main.compare.pdf: doc.tex
 
 ######################################################################
 

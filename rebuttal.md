@@ -18,7 +18,7 @@ We agree about strength, and hope to head in this direction. Publishing the idea
 
 _4. The philosophy of NHST is so deeply embedded within science, it seems unlikely that changing the terminology will change how people use or interpret NHST. For example ‘significance’ has a technical and objective meaning. ‘clear’ is a simpler word that is also more subjective. Using ‘clear’ may allow “significant” to reclaim its common definition, but perhaps ‘clear’ would then become a term that has a specific and altered meaning within scientific manuscripts, with all the same drawbacks that ‘significance’ now has. i.e. maybe the benefits would be short-lived until we are familiar with the new term._
 
-Maybe. Both words have subjective meanings, and either word can be vested with a technical statistical meaning. Our larger point is that the technical statistical meaning has more in common with the informal meanings of "clear" than "significant".
+Maybe. Both words have subjective meanings, and either word can be vested with a technical statistical meaning. Our larger point is that the technical statistical meaning has more in common with the informal meanings of "clear" than "significant". We now make the point that caution is required in this regard.
 
 _In some of the examples in your table, the sentences on the right are better, but that seems to be unconnected to the use ‘clear’. In 5th example, your phrasing is much improved, but seems that the word ‘clear’ could be replaced with ‘significant’ for the same effect. So this table seems to confound poor interpretation practice with the language used. I recognise that you claim the language will help the interpretation, but it’s difficult to judge that from these examples._
 
