@@ -1,7 +1,7 @@
 
 
 ## Document main.pdf
-	## main.compare.pdf
+	## main.compare.pdf; control by changing review.tex target
 ## Rebuttal rebuttal.html
 
 ## Hooks
@@ -54,7 +54,7 @@ main.pdf: doc.tex main.tex
 ## JD First pass 96679d
 
 Ignore += *.review.tex
-%.review.tex: %.tex.96679d.oldfile
+%.review.tex: %.tex.fa24786.oldfile
 	$(copy)
 
 Ignore += *.compare.tex
