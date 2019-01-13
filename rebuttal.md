@@ -1,5 +1,5 @@
 
-BB thinks we should have a preamble about how we're not solving the world's problems. JD is not so sure (especially since the first response tends in that direction already).
+BB thinks we should have a preamble about how we're not solving the world's problems. JD is not so sure (especially since the first response tends in that direction already). MK: We need a short cover letter in addition to this document correct? Put a brief statement about this there?
 
 Reviewer: 1
 ===========
