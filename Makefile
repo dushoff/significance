@@ -1,8 +1,11 @@
 ## gitroot/significance: the Clarity project
 
 ## Document main.pdf
-	## main.compare.pdf; control by changing review.tex target
+## main.compare.pdf: doc.tex main.tex
+## main.pdf: doc.tex main.tex
+
 ## Rebuttal rebuttal.html
+## rebuttal.html: rebuttal.md
 
 current: target
 target = Makefile
@@ -50,11 +53,15 @@ main.pdf: doc.tex main.tex
 
 ## Real reviewed MS fa24786
 ## JD First pass 96679d
+## JD handoff 714ccc
 
 Ignore += *.review.tex
-%.review.tex: %.tex.fa24786.oldfile
+%.review.tex: %.tex.714ccc.oldfile
 	$(copy)
 
+######################################################################
+
+## Diff pipeline not piping well!
 Ignore += *.compare.tex
 ## latexdiff is hard with the main/doc structure
 %.compare.tex: %.review.tex %.tex
@@ -67,7 +74,7 @@ main.compare.tex: main.tex Makefile
 	perl -npe "s/\.tex/.compare.tex/" $< > $@
 
 Sources += ldpre.tex
-## main.compare.pdf: doc.tex
+main.compare.pdf: doc.tex
 
 ######################################################################
 
