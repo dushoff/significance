@@ -52,11 +52,14 @@ Sources += main.tex doc.tex table.tex
 main.pdf: doc.tex main.tex
 
 ## Real reviewed MS fa24786
+## git checkout fa24786 -- doc.tex ##
 ## JD First pass 96679d
 ## JD handoff 714ccc
 
 Ignore += *.review.tex
-%.review.tex: %.tex.714ccc.oldfile
+newrev:
+	$(RM) *.review.tex
+%.review.tex: %.tex.fa24786.oldfile
 	$(copy)
 
 ######################################################################
