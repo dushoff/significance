@@ -12,7 +12,7 @@ Thanks for your perspective. We are also not convinced our suggestion will solve
 
 _2. I don’t understand the logic that using the term ‘clear’ automatically makes the need for effect sizes and confidence intervals more obvious. Can you explain this logical jump more fully within the manuscript?_
 
-We don't argue that it's automatic, but we do rely on the assumption that use of a term whose colloquial meaning closely matches what P values indicate will lead to clearer communication. We gave an example where we believe the word "clear" underlines the absence of effect sizes (L136 of ORIGINAL), and mentioned CIs in the table. We have now added another mention to the table, and an UNCONVINCING comment to the ¶ where we present the table.
+We don't argue that it's automatic, but we do rely on the assumption that use of a term whose colloquial meaning closely matches what P values indicate will lead to clearer communication. We gave an example where we believe the word "clear" underlines the absence of effect sizes (L136 of ORIGINAL), and mentioned CIs in the table. We have now added another mention to the table, and a comment to the ¶ where we present the table.
 
 _3. If some people adopt this terminology, whilst others do not, it could become a very confusing and unclear landscape of scientific understanding. I think this would have more strength if a single domain or several journals gave new guidelines to only use this term, however that would likely require a more evidence-based case than presented here._
 
