@@ -49,7 +49,7 @@ Sources += chicago2.bst wlpeerj.cls
 
 ## Manuscript
 Sources += main.tex doc.tex table.tex
-main.pdf: doc.tex main.tex
+## main.pdf: main.tex
 
 ## Real reviewed MS fa24786
 ## git checkout fa24786 -- doc.tex ##

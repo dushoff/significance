@@ -1,6 +1,6 @@
 %% https://tex.stackexchange.com/questions/238349/error-option-clash-for-package-xcolor
 %% \PassOptionsToPackage{table,dvipsnames}{xcolor}
-\documentclass[12pt, english, dvipsnames, table]{OverleafPJ} % Just a convenient template
+\documentclass[12pt, english, dvipsnames, table]{article} % Just a convenient template
 \usepackage{xcolor}
 \definecolor{vlg}{rgb}{0.88, 0.88, 0.88}
 \usepackage{palatino}
@@ -45,25 +45,28 @@
 \newcommand{\pvals}{p-values\xspace}
 \newcommand{\citeneeded}{\textbf{CITE}}
 
-\title{I can see clearly now: reinterpreting statistical significance}
-
-\author[1]{Jonathan Dushoff}
-\author[1]{Morgan P. Kain}
-\author[1,2]{Benjamin M. Bolker}
-
-\affil[1]{Department of Biology, McMaster University, 1280 Main Street West, Hamilton, Ontario L8S 4K1 Canada}
-\affil[2]{Department of Mathematics and Statistics, McMaster University, 1280 Main Street West, Hamilton, Ontario 
-L8S 4L8 Canada}
-
-\corrauthor[1]{Jonathan Dushoff}{dushoff@mcmaster.ca}
+\begin{document}
 
 %\input{ldpre.tex}
 
-\begin{document}
 
+\section*{I can see clearly now: reinterpreting statistical significance}
+
+\noindent {Jonathan Dushoff}$\mbox{}^{1,*}$
+\hfill
+{Morgan P. Kain}$\mbox{}^{1,*}$
+\hfill
+{Benjamin M. Bolker}$\mbox{}^{1,2}$
+
+\medskip\noindent 1.~{Department of Biology, McMaster University, 1280 Main Street West, Hamilton, Ontario L8S 4K1 Canada}
+
+\medskip\noindent 2.~{Department of Mathematics and Statistics, McMaster University, 1280 Main Street West, Hamilton, Ontario 
+L8S 4L8 Canada}
+
+\medskip\noindent * Corresponding author \tt{dushoff@mcmaster.ca}
 
 \flushbottom
-\maketitle
+%% \maketitle
 %\newpage
 %\thispagestyle{empty}
 
@@ -208,7 +211,7 @@ The precise mechanisms for the association between viral hepatitis and low BMD i
 statistically clear (adjusted OR 1.26, 95\% CI 0.75–2.10). \ldots  Pursuing biological differences between women and men in the effect of HIV on BMD would be premature given these results.
 \\
 \end{tabular}
-\captionof{table}{Examples of misleading language in peer-reviewed papers (citations available by request), and revisions using our proposed  language of clarity.}
+\caption{Examples of misleading language in peer-reviewed papers (citations available by request), and revisions using our proposed  language of clarity.}
 \label{quotetab}
 \end{table}
 
