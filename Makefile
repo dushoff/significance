@@ -47,6 +47,8 @@ $(ms)/Makefile:
 
 Sources += chicago2.bst wlpeerj.cls
 
+Sources += proof.txt
+
 ## Manuscript
 Sources += main.tex doc.tex table.tex
 ## main.pdf: main.tex

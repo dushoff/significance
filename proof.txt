@@ -1,0 +1,44 @@
+
+Your queries
+------------
+
+* Surnames and given names are correct
+* Web addresses have all been verified
+* McShane has not been published yet! Sorry for this mistake on our part. We have appended a bibtex citation to ArXiv. Hope this is acceptable.
+* Page range for Robinson is 1-20
+* Ziliak address is Ann Arbor
+
+Comments
+--------
+
+* There is meant to be a LaTeX \Rightarrow between 0.05 and no in the table subhead "Accepting the null hypothesis (p > 0.05 no effect)
+
+* ORCID entry should read: Jonathan Dushoff ORCID ID
+https://orcid.org/0000-0003-0506-4794
+
+Our questions
+-------------
+
+Will funder information that we added on the website show up
+somewhere, or should we add it to the Acknowledgment section? If the
+latter, please add: This work was partially supported by a grant from
+the Natural Sciences and Engineering Research Council of Canada to JD.
+
+Bibtex entry
+------------
+
+@article{McShaneArxiv,
+       author = {{McShane}, Blakeley B. and {Gal}, David and {Gelman}, Andrew and
+        {Robert}, Christian and {Tackett}, Jennifer L.},
+        title = "{Abandon Statistical Significance}",
+      journal = {arXiv e-prints},
+     keywords = {Statistics - Methodology, 97K70},
+         year = 2017,
+        month = Sep,
+          eid = {arXiv:1709.07588},
+        pages = {arXiv:1709.07588},
+archivePrefix = {arXiv},
+       eprint = {1709.07588},
+ primaryClass = {stat.ME},
+}
+
