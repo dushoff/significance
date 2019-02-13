@@ -13,8 +13,10 @@ Comments
 
 * There is meant to be a LaTeX \Rightarrow between 0.05 and no in the table subhead "Accepting the null hypothesis (p > 0.05 no effect)
 
-* ORCID entry should read: Jonathan Dushoff ORCID ID
-https://orcid.org/0000-0003-0506-4794
+* Not sure how many ORCIDs you publish. Our numbers are:
+	* Jonathan Dushoff 0000-0003-0506-4794 [corresponding]
+	* Morgan Kain [shown correctly, but not corresponding)
+	* Ben Bolker 0000-0002-2127-0443
 
 Our questions
 -------------
